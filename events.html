@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Upcoming Events - Lumière Dining</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec1313",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221010",
+                        "surface-dark": "#331919",
+                        "border-dark": "#482323",
+                        "text-subtle": "#c99292",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-border-dark bg-background-dark px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-4 text-white">
+<div class="size-8 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Lumière Dining</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9">
+<a class="text-text-subtle hover:text-white transition-colors text-sm font-medium leading-normal" href="menu.html">Menu</a>
+<a class="text-text-subtle hover:text-white transition-colors text-sm font-medium leading-normal" href="reservations.html">Reservations</a>
+<a class="text-white text-sm font-medium leading-normal" href="events.html">Events</a>
+<a class="text-text-subtle hover:text-white transition-colors text-sm font-medium leading-normal" href="index.html">Private Dining</a>
+<a class="text-text-subtle hover:text-white transition-colors text-sm font-medium leading-normal" href="index.html">About Us</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-red-700 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Book Table</span>
+</button>
+</div>
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="flex flex-1 justify-center py-5 px-4 md:px-10 lg:px-20">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1 w-full gap-8">
+<!-- Hero Section -->
+<div class="@container">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-8 relative overflow-hidden group" data-alt="Elegant evening dinner party with warm lighting" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(34, 16, 16, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuARXfCWkXwB7b1ylVGimywWJVzJnCrg6w8rQ_BRNx57tj76dAgHOAb9NP3z6c-vWoq1Ffb_KPuOQ3JUJrHVIzO2o9PKoESxAdhXxlitVS-5__EjHbI_g9RlZhng89otPJULzO42TDJHW42WEDHL5KWwrz4_TKFGThQXnq_EsZQjvM3vQosg52thgKeKONIdyZ0aS2UpT6rjfTfmpEcLQh2CdFyUIlXQjIrWtibwxUn6FKpeFJHC81v3eGC2KNohJHli6OjVQtdtpw");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500"></div>
+<div class="flex flex-col gap-4 text-center z-10 max-w-2xl">
+<span class="uppercase tracking-widest text-primary font-bold text-sm">Experience the Extraordinary</span>
+<h1 class="text-white text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em]">
+                                    Culinary Experiences &amp; Events
+                                </h1>
+<p class="text-slate-200 text-lg md:text-xl font-normal leading-relaxed">
+                                    Join us for an unforgettable evening of gastronomy and entertainment. Discover our curated selection of upcoming events.
+                                </p>
+</div>
+<div class="z-10 flex gap-4 mt-4">
+<button class="flex cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-primary hover:bg-red-700 text-white text-base font-bold transition-all shadow-lg hover:shadow-primary/20">
+<span>View Calendar</span>
+</button>
+<button class="flex cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-surface-dark/80 backdrop-blur-sm border border-border-dark hover:bg-surface-dark text-white text-base font-medium transition-all">
+<span>Private Events</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Featured Event (Large Card) -->
+<section>
+<div class="flex items-center justify-between mb-6 px-2">
+<h2 class="text-white tracking-tight text-3xl font-bold">Featured Happening</h2>
+<a class="text-primary hover:text-white transition-colors flex items-center gap-1 text-sm font-medium" href="index.html">
+                                View All <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="flex flex-col lg:flex-row items-stretch overflow-hidden rounded-xl bg-surface-dark border border-border-dark shadow-xl hover:shadow-2xl transition-shadow duration-300 group">
+<div class="w-full lg:w-3/5 bg-cover bg-center min-h-[300px] relative" data-alt="Jazz musician playing saxophone in dark club" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAESW2EPWTHeysSWgV_X7SUEWIJoj1e_Uwite9MTaNMPoMt--qnLiUwXXrOhuqy2AhHeyelKHqe0zI1QOjPPgY0nUGdaLNhuPo2IT8mxHIq_0Yg7jaBVQ2EYsxcKLD9lamO6fC8EQsK8LXXHwgIc5eDZGve73j2CXZPcAienBfuvzWbepXKP4jB9JpxqW4YFZJ7k5A-Yu1zliLq6RmE_fowq_be5hfV9Giw5d0FPaF95sTNje8SGJZ7vEQ7amgadPMJZELoCxdkVw");'>
+<div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded uppercase tracking-wider shadow-md">
+                                    This Week
+                                </div>
+</div>
+<div class="flex w-full lg:w-2/5 flex-col justify-center p-8 lg:p-10 gap-6 relative">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl text-white">music_note</span>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-primary font-medium text-sm">
+<span class="material-symbols-outlined text-lg">calendar_month</span>
+<span>Every Thursday • 8:00 PM</span>
+</div>
+<h3 class="text-white text-3xl font-bold leading-tight group-hover:text-primary transition-colors">Jazz &amp; Gin Night</h3>
+</div>
+<p class="text-text-subtle text-base leading-relaxed">
+                                    Experience the smooth sounds of live jazz accompanied by our exclusive gin selection. Our resident trio sets the mood while our mixologists craft botanical masterpieces.
+                                </p>
+<div class="pt-2">
+<button class="flex w-full sm:w-auto cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-primary hover:bg-red-700 text-white text-sm font-bold transition-colors shadow-lg shadow-primary/10">
+                                        Reserve a Table
+                                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Masonry Grid for Other Events -->
+<section>
+<h2 class="text-white tracking-tight text-3xl font-bold mb-6 px-2">Upcoming Calendar</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="flex flex-col bg-surface-dark rounded-xl border border-border-dark overflow-hidden group hover:-translate-y-1 transition-transform duration-300 shadow-lg">
+<div class="relative h-56 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Wine glasses being toasted at a tasting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdQKg8Y7jxPr9hJhFNu0DggKvKt1B8jwGosf9cOtiL9C_nh1ltCxILJ4CzeL-WNFh2cjnRJ9GsL5kRqsy7orJ0sgsvMDPJ5kqAlDfemjbTuzQdpgVkCGBWYEY7CEOWYUmA3M9VTk7Cz9igev2EVYx7hbvkUlvTDB9wj_hAo489ERcMPzSYcxgCfmrPmoNlkBYg515eNB8d6mPWdo9MJ_YzvDzrUrXYhvz9F8Ek9tfKC8zZ0IOfj_BfYfyHxmJXo23wNxLTu0dM3g");'></div>
+<div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-bold border border-white/10">
+                                        Nov 15
+                                    </div>
+</div>
+<div class="p-6 flex flex-col gap-4 flex-1">
+<div>
+<div class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Tasting Event</div>
+<h3 class="text-white text-xl font-bold leading-snug">Sommelier's Wine Journey</h3>
+</div>
+<p class="text-text-subtle text-sm line-clamp-3">
+                                        A guided journey through the vineyards of Bordeaux with our head sommelier. Includes 5 premium pairings and charcuterie.
+                                    </p>
+<div class="mt-auto pt-2 flex items-center justify-between">
+<span class="text-white font-medium text-sm">$120 / Person</span>
+<button class="text-white bg-border-dark hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">local_activity</span>
+                                            Book Spot
+                                        </button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col bg-surface-dark rounded-xl border border-border-dark overflow-hidden group hover:-translate-y-1 transition-transform duration-300 shadow-lg">
+<div class="relative h-56 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Chef preparing a gourmet dish in kitchen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuByqM61y7I6WvdlAWhPDe9drcyzer_Vgb5WL_u-UN79Iw_c2rrLKgJmIh6ykiZm9YdmGTGLxBzjiBqKbuogGB30FfGw4PBa6X8qwaZILPwDyV6bvsOCCsYiG6T5w_0sReCvXb7HZq7vXv_y3ICwDqJ2OadKavDaMbGgh1rsUVELwWVwgnPMBbQ4SpQZK7n0jg439bgVdTP4bgRkC-NckXA-ryGZjX9ff-jPZ9FTsw5Fi3wQufNR_Ne-rj7RTm6bjkEEhU6w-FfQaw");'></div>
+<div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-bold border border-white/10">
+                                        Nov 22
+                                    </div>
+</div>
+<div class="p-6 flex flex-col gap-4 flex-1">
+<div>
+<div class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Guest Chef Series</div>
+<h3 class="text-white text-xl font-bold leading-snug">Chef Marco's Truffle Feast</h3>
+</div>
+<p class="text-text-subtle text-sm line-clamp-3">
+                                        Renowned Chef Marco joins us for one night only to present a 7-course tasting menu celebrating white truffles season.
+                                    </p>
+<div class="mt-auto pt-2 flex items-center justify-between">
+<span class="text-white font-medium text-sm">$250 / Person</span>
+<button class="text-white bg-border-dark hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">restaurant_menu</span>
+                                            Reserve
+                                        </button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col bg-surface-dark rounded-xl border border-border-dark overflow-hidden group hover:-translate-y-1 transition-transform duration-300 shadow-lg">
+<div class="relative h-56 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Cocktail masterclass setup with ingredients" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA9ddbRVP_U4Ri3u6s8jH0vLqyaFoQA1iorRO6ZVT0bGnBxPD1vcw_egs7zHG6OT6df3_y257gazW3CQWmHMlC460GkLaGR3JMJ1_ZcvjLxIjtRlJGXnd8E9W7V6T6BXlskzTXeD3pCfODCSQoxTCimzrTT7hMYKrbToiy-iCMJju7HdKZju480SNMq71LVymCFmObst2KsjAn_ruLAk3pxBaYibQbFx921U9EB0oVvtbFUnMMkize_q02AKcy3ZUyu5gd-7PNKMg");'></div>
+<div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-bold border border-white/10">
+                                        Dec 01
+                                    </div>
+</div>
+<div class="p-6 flex flex-col gap-4 flex-1">
+<div>
+<div class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Masterclass</div>
+<h3 class="text-white text-xl font-bold leading-snug">Holiday Cocktail Workshop</h3>
+</div>
+<p class="text-text-subtle text-sm line-clamp-3">
+                                        Learn the art of mixology just in time for the holidays. Create three signature festive cocktails under expert guidance.
+                                    </p>
+<div class="mt-auto pt-2 flex items-center justify-between">
+<span class="text-white font-medium text-sm">$85 / Person</span>
+<button class="text-white bg-border-dark hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">local_bar</span>
+                                            Join Class
+                                        </button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col bg-surface-dark rounded-xl border border-border-dark overflow-hidden group hover:-translate-y-1 transition-transform duration-300 shadow-lg">
+<div class="relative h-56 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Oysters on ice platter luxury food" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMmdLfe6jBJ8rP4xkFPiplMeRTBA82y8xGPg1I4mVpNb21iJrkTZK1eyZy4MwWQjTOG0q9dFu3vE3SQmEFPfoqB0Kln57VvsW2uxPYNrGDcJG84Y7JAAzsD-t1Z8YCgQxUblFASijABZJRnNfccYWT--kldgVlEtV9PIazv__PrpNR4SNii5SFOUzPgiXRlFxW-i4FdwL-lRdGz31J6kEWBZfvVbja008NffTZnjuz6qJWKlI15GCRIhVjS3b1FVQn0nFLmhsteg");'></div>
+<div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-bold border border-white/10">
+                                        Dec 10
+                                    </div>
+</div>
+<div class="p-6 flex flex-col gap-4 flex-1">
+<div>
+<div class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Seafood Special</div>
+<h3 class="text-white text-xl font-bold leading-snug">Oysters &amp; Champagne</h3>
+</div>
+<p class="text-text-subtle text-sm line-clamp-3">
+                                        Unlimited fresh oysters from both coasts paired with free-flowing Veuve Clicquot. An indulgent Sunday brunch.
+                                    </p>
+<div class="mt-auto pt-2 flex items-center justify-between">
+<span class="text-white font-medium text-sm">$150 / Person</span>
+<button class="text-white bg-border-dark hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">water_full</span>
+                                            Reserve
+                                        </button>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="flex flex-col bg-surface-dark rounded-xl border border-border-dark overflow-hidden group hover:-translate-y-1 transition-transform duration-300 shadow-lg">
+<div class="relative h-56 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Dark moody library room for private dining" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsYN8sxrjkkRXnrPtLH2wDebmvJghZgXSgeZkU58pD569x0zd3qNAWqcKundS6mne4LlOFvJ9Zz5e_ieadlmpcvnHLpmZRNTLWewZt7kK6iKse1tZzhZhPjOPzfNXkEfV5NRn435mGqUcziE-9KKyG4OcMWgGDJOezuA5v91YCAbOFhhA4MX_W4-cnOQr32oKpkrP00-XW2E2YzTSkHG_Tix1s6W3wPACZFixxbNjls8rn0A4AmCKjdhAwPeO-TRNsdlYU3G_Pmg");'></div>
+<div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-bold border border-white/10">
+                                        Dec 24
+                                    </div>
+</div>
+<div class="p-6 flex flex-col gap-4 flex-1">
+<div>
+<div class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Gala Dinner</div>
+<h3 class="text-white text-xl font-bold leading-snug">Christmas Eve Gala</h3>
+</div>
+<p class="text-text-subtle text-sm line-clamp-3">
+                                        Celebrate the festive season in style with a 5-course traditional dinner with a modern twist, live carols, and gifts.
+                                    </p>
+<div class="mt-auto pt-2 flex items-center justify-between">
+<span class="text-white font-medium text-sm">$180 / Person</span>
+<button class="text-white bg-border-dark hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">celebration</span>
+                                            Book Table
+                                        </button>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="flex flex-col bg-surface-dark rounded-xl border border-border-dark overflow-hidden group hover:-translate-y-1 transition-transform duration-300 shadow-lg">
+<div class="relative h-56 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Elegant new years eve fireworks champagne toast" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBh-bOwOelXRuJEvCUMMJF7P7EZP_mDD0pneLCDdPqBM3QwQ5YK-wJO7DShBXW7Yl2QPMeXDXYNMwMKRVDMq3zKWVKq81ffF-6UuK3mcpgqderbYkRxIx2VlAZcusqed3JHeIC8FXLz8NFzW93zamv-ZeZNw-yjeOJep2pXQON_0OA5O0tqKParIQFlgFcOUL_3rxf8rIW6Og0dFVSORH-ZevWniqP7n_TP0oVXtWWE3F9wu3DBJ5L84GX30zvGA2M6I1Ldj5gXw");'></div>
+<div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-bold border border-white/10">
+                                        Dec 31
+                                    </div>
+</div>
+<div class="p-6 flex flex-col gap-4 flex-1">
+<div>
+<div class="text-primary text-xs font-bold uppercase tracking-wider mb-1">New Year's Eve</div>
+<h3 class="text-white text-xl font-bold leading-snug">Midnight Masquerade</h3>
+</div>
+<p class="text-text-subtle text-sm line-clamp-3">
+                                        Ring in the new year with mystery and glamour. Includes open bar, heavy hors d'oeuvres, and a DJ spinning until 2am.
+                                    </p>
+<div class="mt-auto pt-2 flex items-center justify-between">
+<span class="text-white font-medium text-sm">$300 / Person</span>
+<button class="text-white bg-border-dark hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">star</span>
+                                            Get Tickets
+                                        </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Private Events CTA -->
+<section class="mt-10 rounded-xl bg-surface-dark border border-border-dark p-8 md:p-12 relative overflow-hidden">
+<div class="absolute right-0 top-0 h-full w-1/3 bg-gradient-to-l from-primary/10 to-transparent pointer-events-none"></div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
+<div class="max-w-xl">
+<h2 class="text-white text-2xl md:text-3xl font-bold mb-3">Host Your Own Private Event</h2>
+<p class="text-text-subtle text-base mb-6">Looking for something more exclusive? Our private dining rooms are available for corporate events, weddings, and special celebrations.</p>
+<div class="flex flex-wrap gap-4">
+<button class="flex items-center gap-2 text-white bg-primary hover:bg-red-700 px-6 py-3 rounded-lg font-bold transition-colors">
+                                        Inquire Now
+                                    </button>
+<button class="flex items-center gap-2 text-white border border-border-dark hover:bg-white/5 px-6 py-3 rounded-lg font-medium transition-colors">
+<span class="material-symbols-outlined">download</span>
+                                        Event Brochure
+                                    </button>
+</div>
+</div>
+<div class="hidden md:block">
+<div class="size-32 rounded-full border-2 border-primary/30 flex items-center justify-center relative">
+<div class="absolute inset-0 border-2 border-white/10 rounded-full animate-ping opacity-20"></div>
+<span class="material-symbols-outlined text-5xl text-primary">diamond</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark border-t border-border-dark py-12 px-10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-[1200px] mx-auto">
+<div class="text-text-subtle text-sm">
+                        © 2023 Lumière Dining. All rights reserved.
+                    </div>
+<div class="flex gap-6">
+<a class="text-text-subtle hover:text-white transition-colors" href="index.html">
+<span class="sr-only">Instagram</span>
+<svg aria-hidden="true" class="size-5" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.468 2.373c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-text-subtle hover:text-white transition-colors" href="index.html">
+<span class="sr-only">Facebook</span>
+<svg aria-hidden="true" class="size-5" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

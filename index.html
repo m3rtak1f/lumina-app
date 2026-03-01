@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lumina Bistro - Fine Dining Experience</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec4913",
+                        "primary-dark": "#b0320a",
+                        "accent": "#d4a05e", // Gold/Cream accent for premium feel
+                        "background-light": "#fcf9f8",
+                        "background-dark": "#1b110d",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#2a1e1a",
+                        "text-main": "#1b110d",
+                        "text-muted": "#9a5f4c"
+                    },
+                    fontFamily: {
+                        "display": ["Be Vietnam Pro", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light font-display text-text-main antialiased selection:bg-primary selection:text-white">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-stone-200 bg-background-light/95 backdrop-blur-sm">
+<div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="flex size-10 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined text-2xl">restaurant</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-text-main">Lumina Bistro</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-text-main hover:text-primary transition-colors" href="menu.html">Menu</a>
+<a class="text-sm font-medium text-text-main hover:text-primary transition-colors" href="reservations.html">Reservations</a>
+<a class="text-sm font-medium text-text-main hover:text-primary transition-colors" href="events.html">Events</a>
+<a class="text-sm font-medium text-text-main hover:text-primary transition-colors" href="index.html">About</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex items-center rounded-full bg-surface-light px-4 py-2 ring-1 ring-stone-200 transition-shadow focus-within:ring-2 focus-within:ring-primary">
+<span class="material-symbols-outlined text-text-muted">search</span>
+<input class="w-32 border-none bg-transparent p-0 pl-2 text-sm text-text-main placeholder-text-muted focus:ring-0 sm:w-48" placeholder="Search menu..." type="text"/>
+</div>
+<button class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+                    Book a Table
+                </button>
+<button class="md:hidden p-2 text-text-main">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<section class="relative">
+<div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+<div class="relative overflow-hidden rounded-2xl bg-stone-900 shadow-xl" data-alt="Chef delicately plating a gourmet dish in a professional kitchen">
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASwk2y_ISPTzoFDZmmQHYyEnzOipnvL1SUzypljoCpXDYxyA3lpJpERPdJhAiloVdSr8T7Ew1LnX1g1mUl5AaXRbJfI1b_XOCQEGocnErPKFseGkKYRK_9p0Z85ZbeAkTyNCgiz_zbkuITCASz-K03w-QzPfeO5-lDQUecSv0mm42e36GXDS8_LmaEh95cgOGXXtzlbcfgHNwWmXc_f3UujTHmcm9nu9fISmc0ztjKlZd-ScSLXOa0oKKiqEI4JM_iOdv8FmzkQQ');"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent"></div>
+<div class="relative flex min-h-[500px] flex-col justify-center px-8 py-16 sm:px-12 lg:px-16">
+<span class="mb-4 inline-block font-medium text-accent tracking-widest uppercase text-sm">Fine Dining Excellence</span>
+<h2 class="mb-6 max-w-2xl text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+                            Taste the Art of <br/>
+<span class="text-primary">Culinary Perfection</span>
+</h2>
+<p class="mb-10 max-w-lg text-lg text-stone-300">
+                            Experience a symphony of flavors crafted with passion. Join us for an unforgettable evening at Lumina Bistro, where every dish tells a story.
+                        </p>
+<div class="flex flex-wrap gap-4">
+<button class="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-base font-bold text-white transition-transform hover:scale-105">
+                                View Full Menu
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="inline-flex items-center gap-2 rounded-full bg-white/10 px-8 py-3.5 text-base font-bold text-white backdrop-blur-sm transition-colors hover:bg-white/20">
+                                Watch Video
+                                <span class="material-symbols-outlined text-sm">play_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="mb-10 flex flex-col items-end justify-between gap-4 border-b border-stone-200 pb-6 sm:flex-row sm:items-end">
+<div>
+<h3 class="text-3xl font-bold tracking-tight text-text-main">Our Menu</h3>
+<p class="mt-2 text-text-muted">Explore our curated selection of exquisite dishes.</p>
+</div>
+<div class="flex gap-2">
+<button class="flex size-10 items-center justify-center rounded-full border border-stone-200 text-text-main hover:bg-stone-50">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-full bg-text-main text-white hover:bg-stone-800">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
+<div class="group relative col-span-1 overflow-hidden rounded-xl bg-stone-100 shadow-md transition-all hover:shadow-xl sm:col-span-2 lg:row-span-2 lg:h-full">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Gourmet creamy mushroom risotto with herbs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9VRKDp_uWgXS77mUwuw2o2dt4BErK3cSfplUNDF4GAcJjfYn4pyP21FStlweZnGhZREsP_dHgPDoQeDEsp38b34Vhh6sL0nZdZVdmcU7ONZr1gdYyISseEmj2rZO5hwfyhLO3aQX4-wfULVckyFmR1bJma4HjWzuBNjnG7X1ZivrersEuSIu1HPPUm67fbdiURJqavmj1PFVL-w3cjPt3CZaUOjGS3vlWRTdC01MKi0J1KtWoBXIMX8A6maocckkJjS6O6BctHA');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+<div class="relative flex h-full flex-col justify-end p-8">
+<span class="mb-2 text-sm font-bold uppercase tracking-wider text-accent">Chef's Special</span>
+<h4 class="text-3xl font-bold text-white">Risotto</h4>
+<p class="mt-2 line-clamp-2 text-stone-300">Creamy Arborio rice slow-cooked with wild mushrooms, truffle oil, and aged parmesan cheese.</p>
+<a class="mt-6 flex items-center gap-2 text-sm font-bold text-white hover:text-primary" href="index.html">
+                                Explore Dishes <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+</a>
+</div>
+</div>
+<div class="group relative h-64 overflow-hidden rounded-xl bg-stone-100 shadow-md transition-all hover:shadow-xl sm:col-span-1">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Fresh handmade pasta with tomato basil sauce" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCVluD2QzyMcO2M6kh1Rye2LgFM00XJqWpsNVkFv6iwVrge_jMlYBEEW3U5DqeAz7q1uijaGHdgZ00BVsDErExU_cq6HcOMHnHa3R7neNihnswSH18BPQr_42iRxuclNQD-1mHQZEHEvneARjH62TT_J435MSMzb3WLnc4TAfSilr9QvHCIQ560F6BjZxVkoLlVd34Le0PGX8eJehprvvIYVb23_YCIN5o8Ta8h9vo-hJ-vPPzkGZKrqLMbI2aFxU_esD3kbicPkw');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="relative flex h-full flex-col justify-end p-6">
+<h4 class="text-2xl font-bold text-white">Pasta</h4>
+<span class="text-sm font-medium text-stone-300">12 Variations</span>
+</div>
+</div>
+<div class="group relative h-64 overflow-hidden rounded-xl bg-stone-100 shadow-md transition-all hover:shadow-xl sm:col-span-1">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Roasted gourmet chicken dish with vegetables" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCiIw3NDg3vUkW_hpXPMvJpMe_64fzHgt7CRHk0SXRYbvGpX7fHc5FQkOFBXajt99BiGXntlY5n-ojRoAbSfzC0uV1QfECgQdGZn9fS3XoFSY4tWgSVqfrhh1zILunuPQIYHWLwesmJRKEJnY1IiDEMnGAVujC1CvAu-CWIVF2m2dR5z0IpAu0NVGHPeI1gh379Y6WDF3X_GCXxUOOetRm-MntqNnDLZXpKZoAYgz8zMumsnEU9ev8U3Smpcl-AKlkUKLXRU7RNjw');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="relative flex h-full flex-col justify-end p-6">
+<h4 class="text-2xl font-bold text-white">Chicken</h4>
+<span class="text-sm font-medium text-stone-300">8 Variations</span>
+</div>
+</div>
+<div class="group relative h-64 overflow-hidden rounded-xl bg-stone-100 shadow-md transition-all hover:shadow-xl sm:col-span-1">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Various colorful alcoholic cocktails on bar counter" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD0lc7Fc5dkl5LupGx_s3UUqYXXP5l9X0gwqr6JgRSR6_aPTSHoV_CT6frsBBYIzZMC0BoQivxBSuj6Sg1ySVeLZiqIvGq4YBbiQtHkhevwe-hFPCewx5KMWQv6KatDGaAhtXK4x0rnC5FNauu5TvlM-a3X7XLxkI7NXTCd4u7tQlg8W5wsTcECt3O1Inzy6FxwGeTWgWV5Qw9DJqa67YvcmO44NJoyOKETp9zmrPUMrETiRFP6sNNqbI-yyxbDJTLTs7bKPf2qFQ');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="relative flex h-full flex-col justify-end p-6">
+<h4 class="text-2xl font-bold text-white">Alcoholic Drinks</h4>
+<span class="text-sm font-medium text-stone-300">Wine, Cocktails &amp; More</span>
+</div>
+</div>
+<div class="group relative h-64 overflow-hidden rounded-xl bg-stone-100 shadow-md transition-all hover:shadow-xl sm:col-span-1">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Refreshing non-alcoholic beverages with fruit garnish" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDj81l8zfZXiak6ggVrM1YX880F1HjCwPeQNxDI6IgVCiJ0aLyTeXFEDrGk_uEMU7vdAoCCyGAr0DYrTEtcVMdYHALPze66J4sDR6TrnJgVT2yuyGf0QQqr_0zm9EyR6rNWHAkd1GPi4t8v6JuPSP28It9uFSIOS2VTcQ0Sy7QSVjje73LRuA4eIBorvzd6BJlr8I-T83eapJqhIAMfVVoLNL3aRJfT6OXDhJ5W35z2sk1WBNx16Kr3QBZIJSIqBTEbQmuOR3jHaQ');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="relative flex h-full flex-col justify-end p-6">
+<h4 class="text-2xl font-bold text-white">Non-Alcoholic</h4>
+<span class="text-sm font-medium text-stone-300">Mocktails &amp; Soft Drinks</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white border-t border-stone-100">
+<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<div class="flex size-8 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined text-lg">restaurant</span>
+</div>
+<span class="text-lg font-bold text-text-main">Lumina Bistro</span>
+</div>
+<p class="text-sm text-text-muted">
+                        Crafting unforgettable dining experiences with a blend of tradition and modern culinary art.
+                    </p>
+</div>
+<div>
+<h3 class="text-sm font-bold uppercase tracking-wider text-text-main">Quick Links</h3>
+<ul class="mt-4 space-y-3">
+<li><a class="text-sm text-text-muted hover:text-primary" href="index.html">Home</a></li>
+<li><a class="text-sm text-text-muted hover:text-primary" href="menu.html">Menu</a></li>
+<li><a class="text-sm text-text-muted hover:text-primary" href="reservations.html">Reservations</a></li>
+<li><a class="text-sm text-text-muted hover:text-primary" href="index.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-sm font-bold uppercase tracking-wider text-text-main">Contact</h3>
+<ul class="mt-4 space-y-3">
+<li class="flex items-center gap-2 text-sm text-text-muted">
+<span class="material-symbols-outlined text-lg">location_on</span>
+                            123 Gourmet Ave, Food City
+                        </li>
+<li class="flex items-center gap-2 text-sm text-text-muted">
+<span class="material-symbols-outlined text-lg">call</span>
+                            +1 (555) 123-4567
+                        </li>
+<li class="flex items-center gap-2 text-sm text-text-muted">
+<span class="material-symbols-outlined text-lg">mail</span>
+                            hello@luminabistro.com
+                        </li>
+</ul>
+</div>
+<div>
+<h3 class="text-sm font-bold uppercase tracking-wider text-text-main">Opening Hours</h3>
+<ul class="mt-4 space-y-3 text-sm text-text-muted">
+<li class="flex justify-between">
+<span>Mon - Fri</span>
+<span class="font-medium text-text-main">11:00 AM - 10:00 PM</span>
+</li>
+<li class="flex justify-between">
+<span>Sat - Sun</span>
+<span class="font-medium text-text-main">09:00 AM - 11:00 PM</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-12 flex flex-col items-center justify-between border-t border-stone-100 pt-8 sm:flex-row">
+<p class="text-sm text-text-muted">© 2023 Lumina Bistro. All rights reserved.</p>
+<div class="mt-4 flex gap-6 sm:mt-0">
+<a class="text-stone-400 hover:text-primary" href="index.html">
+<span class="sr-only">Instagram</span>
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
+</svg>
+</a>
+<a class="text-stone-400 hover:text-primary" href="index.html">
+<span class="sr-only">Facebook</span>
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path>
+</svg>
+</a>
+<a class="text-stone-400 hover:text-primary" href="index.html">
+<span class="sr-only">Twitter</span>
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
